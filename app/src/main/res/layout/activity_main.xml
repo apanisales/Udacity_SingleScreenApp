@@ -12,6 +12,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:background="#005400"
+        android:contentDescription="@string/content_description_null"
         android:scaleType="fitCenter"
         android:src="@drawable/usf_logo" />
 
@@ -21,19 +22,21 @@
         android:layout_weight="4"
         android:adjustViewBounds="true"
         android:background="#ecb30a"
+        android:contentDescription="@string/content_description_null"
         android:cropToPadding="false"
         android:scaleType="fitXY"
-        android:src="@drawable/group"/>
+        android:src="@drawable/group" />
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="4"
         android:background="#ecb30a"
-        android:paddingTop="16dp"
-        android:scaleType="fitXY"
+        android:contentDescription="@string/content_description_null"
         android:paddingLeft="100dp"
         android:paddingRight="100dp"
+        android:paddingTop="16dp"
+        android:scaleType="fitXY"
         android:src="@drawable/tiger" />
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -87,12 +90,30 @@
                     android:paddingRight="16dp"
                     android:text="@string/location" />
 
-                <TextView
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="16dp"
-                    android:paddingRight="16dp"
-                    android:text="@string/email" />
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="#ecb30a"
+                        android:paddingLeft="13dp"
+                        android:scaleType="center"
+                        android:contentDescription="@string/content_description_null"
+                        android:src="@android:drawable/sym_action_email" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="16dp"
+                        android:text="@string/email"
+                        android:gravity="center_vertical"/>
+
+                </LinearLayout>
 
                 <TextView
                     android:layout_width="match_parent"
