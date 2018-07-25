@@ -33,8 +33,8 @@
         android:layout_weight="4"
         android:background="#ecb30a"
         android:contentDescription="@string/content_description_null"
-        android:paddingLeft="70dp"
-        android:paddingRight="70dp"
+        android:paddingLeft="150dp"
+        android:paddingRight="150dp"
         android:paddingTop="16dp"
         android:scaleType="fitXY"
         android:src="@drawable/tiger" />
@@ -55,7 +55,7 @@
             android:gravity="center_horizontal"
             android:paddingTop="16dp"
             android:text="@string/title"
-            android:textSize="22sp"
+            android:textSize="32sp"
             android:textStyle="bold"/>
 
         <ScrollView
@@ -74,21 +74,24 @@
                     android:paddingLeft="16dp"
                     android:paddingRight="16dp"
                     android:paddingTop="16dp"
-                    android:text="@string/coach" />
+                    android:text="@string/coach"
+                    android:textSize="@dimen/not_title_text_size" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="16dp"
                     android:paddingRight="16dp"
-                    android:text="@string/hours" />
+                    android:text="@string/hours"
+                    android:textSize="@dimen/not_title_text_size" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingLeft="16dp"
                     android:paddingRight="16dp"
-                    android:text="@string/location" />
+                    android:text="@string/location"
+                    android:textSize="@dimen/not_title_text_size" />
 
 
                 <LinearLayout
@@ -111,7 +114,8 @@
                         android:gravity="center_vertical"
                         android:paddingLeft="4dp"
                         android:paddingRight="16dp"
-                        android:text="@string/email"/>
+                        android:text="@string/email"
+                        android:textSize="@dimen/not_title_text_size"/>
 
                 </LinearLayout>
 
@@ -121,7 +125,8 @@
                     android:paddingLeft="16dp"
                     android:paddingRight="16dp"
                     android:paddingTop="16dp"
-                    android:text="@string/club_description" />
+                    android:text="@string/club_description"
+                    android:textSize="@dimen/not_title_text_size" />
 
             </LinearLayout>
 
